@@ -1,0 +1,25 @@
+[package]
+name = "media-typer"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.81"
+description = "Parse and format media types (type/subtype+suffix) per RFC 6838. A faithful port of the `media-typer` npm package. Zero dependencies, no_std."
+documentation = "https://docs.rs/media-typer"
+repository = "https://github.com/trananhtung/media-typer"
+homepage = "https://github.com/trananhtung/media-typer"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["media-type", "mime", "rfc6838", "http", "content-type"]
+categories = ["web-programming", "parser-implementations", "no-std"]
+authors = ["trananhtung"]
+exclude = ["/.github", "/.gitignore"]
+
+[dependencies]
+
+[lints.rust]
+missing_docs = "warn"
+unsafe_code = "forbid"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
